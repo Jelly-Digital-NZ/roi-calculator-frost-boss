@@ -1,1 +1,597 @@
-
+{
+  "crops": {
+    "Almonds": {
+      "unit": {
+        "singular": "Tonne",
+        "plural": "Tonnes"
+      },
+      "coverage": {
+        "low": 6,
+        "high": 8
+      },
+      "fansRequired": {
+        "low": 4,
+        "high": 3
+      },
+      "runHours": {
+        "low": 10,
+        "medium": 30,
+        "high": 50
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
+        "annualInvestment": 9044.39
+      }
+    },
+    "Apples": {
+      "unit": {
+        "singular": "Tonne",
+        "plural": "Tonnes"
+      },
+      "coverage": {
+        "low": 6,
+        "high": 8
+      },
+      "fansRequired": {
+        "low": 4,
+        "high": 3
+      },
+      "runHours": {
+        "low": 10,
+        "medium": 30,
+        "high": 50
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
+        "annualInvestment": 9044.39
+      }
+    },
+    "Apricots": {
+      "unit": {
+        "singular": "Tonne",
+        "plural": "Tonnes"
+      },
+      "coverage": {
+        "low": 6,
+        "high": 8
+      },
+      "fansRequired": {
+        "low": 4,
+        "high": 3
+      },
+      "runHours": {
+        "low": 10,
+        "medium": 30,
+        "high": 50
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
+        "annualInvestment": 9044.39
+      }
+    },
+    "Avocados": {
+      "variants": {
+        "tonne": {
+          "unit": {
+            "singular": "Tonne",
+            "plural": "Tonnes"
+          },
+          "coverage": {
+            "low": 6,
+            "high": 8
+          },
+          "fansRequired": {
+            "low": 4,
+            "high": 3
+          },
+          "runHours": {
+            "low": 50,
+            "medium": 150,
+            "high": 250
+          }
+        },
+        "tray": {
+          "unit": {
+            "singular": "5.5kg Tray",
+            "plural": "5.5kg Trays"
+          },
+          "coverage": {
+            "low": 6,
+            "high": 8
+          },
+          "fansRequired": {
+            "low": 4,
+            "high": 3
+          },
+          "runHours": {
+            "low": 50,
+            "medium": 150,
+            "high": 250
+          }
+        }
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
+        "annualInvestment": 9044.39
+      }
+    },
+    "Blueberries": {
+      "unit": {
+        "singular": "Tonne",
+        "plural": "Tonnes"
+      },
+      "coverage": {
+        "low": 4,
+        "high": 6
+      },
+      "fansRequired": {
+        "low": 6,
+        "high": 4
+      },
+      "runHours": {
+        "low": 50,
+        "medium": 150,
+        "high": 250
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
+        "annualInvestment": 9044.39
+      }
+    },
+    "Chestnuts": {
+      "unit": {
+        "singular": "Tonne",
+        "plural": "Tonnes"
+      },
+      "coverage": {
+        "low": 6,
+        "high": 8
+      },
+      "fansRequired": {
+        "low": 4,
+        "high": 3
+      },
+      "runHours": {
+        "low": 10,
+        "medium": 30,
+        "high": 50
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
+        "annualInvestment": 9044.39
+      }
+    },
+    "Cherries": {
+      "unit": {
+        "singular": "Tonne",
+        "plural": "Tonnes"
+      },
+      "coverage": {
+        "low": 4,
+        "high": 6
+      },
+      "fansRequired": {
+        "low": 6,
+        "high": 4
+      },
+      "runHours": {
+        "low": 10,
+        "medium": 30,
+        "high": 50
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
+        "annualInvestment": 9044.39
+      }
+    },
+    "Citrus": {
+      "unit": {
+        "singular": "Tonne",
+        "plural": "Tonnes"
+      },
+      "coverage": {
+        "low": 6,
+        "high": 8
+      },
+      "fansRequired": {
+        "low": 4,
+        "high": 3
+      },
+      "runHours": {
+        "low": 50,
+        "medium": 150,
+        "high": 250
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
+        "annualInvestment": 9044.39
+      }
+    },
+    "Grapefruit": {
+      "unit": {
+        "singular": "Tonne",
+        "plural": "Tonnes"
+      },
+      "coverage": {
+        "low": 6,
+        "high": 8
+      },
+      "fansRequired": {
+        "low": 4,
+        "high": 3
+      },
+      "runHours": {
+        "low": 50,
+        "medium": 150,
+        "high": 250
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
+        "annualInvestment": 9044.39
+      }
+    },
+    "Hazelnuts": {
+      "unit": {
+        "singular": "Tonne",
+        "plural": "Tonnes"
+      },
+      "coverage": {
+        "low": 6,
+        "high": 8
+      },
+      "fansRequired": {
+        "low": 4,
+        "high": 3
+      },
+      "runHours": {
+        "low": 10,
+        "medium": 30,
+        "high": 50
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
+        "annualInvestment": 9044.39
+      }
+    },
+    "Kiwifruit": {
+      "variants": {
+        "tonne": {
+          "unit": {
+            "singular": "Tonne",
+            "plural": "Tonnes"
+          },
+          "coverage": {
+            "low": 4,
+            "high": 6
+          },
+          "fansRequired": {
+            "low": 6,
+            "high": 4
+          },
+          "runHours": {
+            "low": 10,
+            "medium": 30,
+            "high": 50
+          }
+        },
+        "tray": {
+          "unit": {
+            "singular": "3.6kg tray",
+            "plural": "3.6kg trays"
+          },
+          "coverage": {
+            "low": 4,
+            "high": 6
+          },
+          "fansRequired": {
+            "low": 6,
+            "high": 4
+          },
+          "runHours": {
+            "low": 10,
+            "medium": 30,
+            "high": 50
+          }
+        }
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
+        "annualInvestment": 9044.39
+      }
+    },
+    "Macadamias": {
+      "unit": {
+        "singular": "Tonne",
+        "plural": "Tonnes"
+      },
+      "coverage": {
+        "low": 6,
+        "high": 8
+      },
+      "fansRequired": {
+        "low": 4,
+        "high": 3
+      },
+      "runHours": {
+        "low": 10,
+        "medium": 30,
+        "high": 50
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
+        "annualInvestment": 9044.39
+      }
+    },
+    "Mangoes": {
+      "unit": {
+        "singular": "Tonne",
+        "plural": "Tonnes"
+      },
+      "coverage": {
+        "low": 6,
+        "high": 8
+      },
+      "fansRequired": {
+        "low": 4,
+        "high": 3
+      },
+      "runHours": {
+        "low": 50,
+        "medium": 150,
+        "high": 250
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
+        "annualInvestment": 9044.39
+      }
+    },
+    "Nectarines": {
+      "unit": {
+        "singular": "Tonne",
+        "plural": "Tonnes"
+      },
+      "coverage": {
+        "low": 6,
+        "high": 8
+      },
+      "fansRequired": {
+        "low": 4,
+        "high": 3
+      },
+      "runHours": {
+        "low": 10,
+        "medium": 30,
+        "high": 50
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
+        "annualInvestment": 9044.39
+      }
+    },
+    "Olives": {
+      "unit": {
+        "singular": "Tonne",
+        "plural": "Tonnes"
+      },
+      "coverage": {
+        "low": 6,
+        "high": 8
+      },
+      "fansRequired": {
+        "low": 4,
+        "high": 3
+      },
+      "runHours": {
+        "low": 50,
+        "medium": 150,
+        "high": 250
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
+        "annualInvestment": 9044.39
+      }
+    },
+    "Peaches": {
+      "unit": {
+        "singular": "Tonne",
+        "plural": "Tonnes"
+      },
+      "coverage": {
+        "low": 6,
+        "high": 8
+      },
+      "fansRequired": {
+        "low": 4,
+        "high": 3
+      },
+      "runHours": {
+        "low": 10,
+        "medium": 30,
+        "high": 50
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
+        "annualInvestment": 9044.39
+      }
+    },
+    "Pears": {
+      "unit": {
+        "singular": "Tonne",
+        "plural": "Tonnes"
+      },
+      "coverage": {
+        "low": 6,
+        "high": 8
+      },
+      "fansRequired": {
+        "low": 4,
+        "high": 3
+      },
+      "runHours": {
+        "low": 10,
+        "medium": 30,
+        "high": 50
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
+        "annualInvestment": 9044.39
+      }
+    },
+    "Pecans": {
+      "unit": {
+        "singular": "Tonne",
+        "plural": "Tonnes"
+      },
+      "coverage": {
+        "low": 6,
+        "high": 8
+      },
+      "fansRequired": {
+        "low": 4,
+        "high": 3
+      },
+      "runHours": {
+        "low": 10,
+        "medium": 30,
+        "high": 50
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
+        "annualInvestment": 9044.39
+      }
+    },
+    "Pistachios": {
+      "unit": {
+        "singular": "Tonne",
+        "plural": "Tonnes"
+      },
+      "coverage": {
+        "low": 6,
+        "high": 8
+      },
+      "fansRequired": {
+        "low": 4,
+        "high": 3
+      },
+      "runHours": {
+        "low": 10,
+        "medium": 30,
+        "high": 50
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
+        "annualInvestment": 9044.39
+      }
+    },
+    "Plums": {
+      "unit": {
+        "singular": "Tonne",
+        "plural": "Tonnes"
+      },
+      "coverage": {
+        "low": 6,
+        "high": 8
+      },
+      "fansRequired": {
+        "low": 4,
+        "high": 3
+      },
+      "runHours": {
+        "low": 10,
+        "medium": 30,
+        "high": 50
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
+        "annualInvestment": 9044.39
+      }
+    },
+    "Table_grapes": {
+      "unit": {
+        "singular": "Tonne",
+        "plural": "Tonnes"
+      },
+      "coverage": {
+        "low": 6,
+        "high": 8
+      },
+      "fansRequired": {
+        "low": 4,
+        "high": 3
+      },
+      "runHours": {
+        "low": 20,
+        "medium": 60,
+        "high": 100
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
+        "annualInvestment": 9044.39
+      }
+    },
+    "Walnuts": {
+      "unit": {
+        "singular": "Tonne",
+        "plural": "Tonnes"
+      },
+      "coverage": {
+        "low": 6,
+        "high": 8
+      },
+      "fansRequired": {
+        "low": 4,
+        "high": 3
+      },
+      "runHours": {
+        "low": 10,
+        "medium": 30,
+        "high": 50
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
+        "annualInvestment": 9044.39
+      }
+    },
+    "Wine_grapes": {
+      "unit": {
+        "singular": "Tonne",
+        "plural": "Tonnes"
+      },
+      "coverage": {
+        "low": 6,
+        "high": 8
+      },
+      "fansRequired": {
+        "low": 4,
+        "high": 3
+      },
+      "runHours": {
+        "low": 10,
+        "medium": 30,
+        "high": 50
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
