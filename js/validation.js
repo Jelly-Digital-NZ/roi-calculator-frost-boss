@@ -1,6 +1,6 @@
 // validation.js
 
-class ROIValidator {
+export default class ROIValidator {
     constructor() {
         // Define required fields and their validation rules
         this.validationRules = {
