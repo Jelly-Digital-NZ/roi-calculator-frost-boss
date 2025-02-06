@@ -9,7 +9,7 @@ export default class ROICalculator {
     // Load the crop data based on country
     async initialize() {
         try {
-            const response = await fetch(`/data/${this.country}-crops.json`);
+            const response = await fetch(`https://jelly-digital-nz.github.io/roi-calculator-frost-boss/data/${this.country}-crops.json`);
             this.cropsData = await response.json();
             return true;
         } catch (error) {
