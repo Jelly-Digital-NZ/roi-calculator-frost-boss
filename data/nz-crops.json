@@ -595,3 +595,35 @@
       "costs": {
         "capital": 77000,
         "maintenance": 1000,
+        "annualInvestment": 9044.39
+      },
+      "Other": {
+        "unit": {
+          "singluar": "Tonne",
+          "plural": "Tonnes"
+        },
+        "coverage": {
+        "low": 6,
+        "high": 8
+      },
+      "fansRequired": {
+        "low": 4,
+        "high": 3
+      },
+      "runHours": {
+        "low": 10,
+        "medium": 30,
+        "high": 50
+      },
+      "costs": {
+        "capital": 77000,
+        "maintenance": 1000,
+        "annualInvestment": 9044.39
+      },
+      },
+    },
+  },
+}
+      
+    
+  
