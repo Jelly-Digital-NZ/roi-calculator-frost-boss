@@ -1,6 +1,6 @@
 // calculator.js
 
-class ROICalculator {
+export default class ROICalculator {
     constructor(country = 'nz') {
         this.country = country;
         this.cropsData = null;
@@ -122,4 +122,4 @@ class ROICalculator {
     }
 }
 
-export default ROICalculator;
+// Not needed since we're using export default at the top of the class
