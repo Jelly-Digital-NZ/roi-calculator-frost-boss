@@ -596,10 +596,11 @@
         "capital": 77000,
         "maintenance": 1000,
         "annualInvestment": 9044.39
-      },
+      }
+    },
       "Other": {
         "unit": {
-          "singluar": "Tonne",
+          "singular": "Tonne",
           "plural": "Tonnes"
         },
         "coverage": {
@@ -623,7 +624,6 @@
       }
     }
   }
-}
       
     
   
