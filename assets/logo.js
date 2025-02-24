@@ -1,1 +1,2 @@
-export const LOGO_URL = 'https://jelly-digital-nz.github.io/roi-calculator-frost-boss/assets/logo.png';
+# Assets
+This folder contains static assets for the ROI calculator
