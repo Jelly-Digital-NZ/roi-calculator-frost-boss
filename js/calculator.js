@@ -2,7 +2,7 @@
 
 export default class ROICalculator {
    constructor(country = 'nz') {
-       this.country = country;
+       this.country = country.toLowerCase();
        this.cropsData = null;
    }
 
@@ -104,17 +104,27 @@ export default class ROICalculator {
        };
    }
 
-   // Helper function to format currency
+   // Helper function to format currency based on country
    formatCurrency(value) {
-       return new Intl.NumberFormat('en-NZ', {
+       const currencyMap = {
+           'nz': 'NZD',
+           'au': 'AUD'
+       };
+       
+       const currency = currencyMap[this.country] || 'NZD';
+       const locale = this.country === 'au' ? 'en-AU' : 'en-NZ';
+       
+       return new Intl.NumberFormat(locale, {
            style: 'currency',
-           currency: 'NZD'
+           currency: currency
        }).format(value);
    }
 
    // Helper function to format percentage
    formatPercentage(value) {
-       return new Intl.NumberFormat('en-NZ', {
+       const locale = this.country === 'au' ? 'en-AU' : 'en-NZ';
+       
+       return new Intl.NumberFormat(locale, {
            style: 'percent',
            minimumFractionDigits: 2,
            maximumFractionDigits: 2
