@@ -1,1 +1,212 @@
-
+{
+  "crops": {
+    "Almonds": {
+      "unit": "Tonnes",
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 6,
+        "high": 8
+      }
+    },
+    "Apples": {
+      "unit": "Tonnes",
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 6,
+        "high": 8
+      }
+    },
+    "Apricots": {
+      "unit": "Tonnes", 
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 6,
+        "high": 8
+      }
+    },
+    "Avocados_Tonne": {
+      "unit": "Tonnes",
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 6,
+        "high": 8
+      }
+    },
+    "Avocados_Tray": {
+      "unit": "5.5kg Tray",
+      "unitPlural": "5.5kg Tray",
+      "coverage": {
+        "low": 6,
+        "high": 8
+      }
+    },
+    "Blueberries": {
+      "unit": "Tonnes",
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 4,
+        "high": 6
+      }
+    },
+    "Chestnuts": {
+      "unit": "Tonnes",
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 6,
+        "high": 8
+      }
+    },
+    "Cherries": {
+      "unit": "Tonnes",
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 4,
+        "high": 6
+      }
+    },
+    "Citrus": {
+      "unit": "Tonnes",
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 6,
+        "high": 8
+      }
+    },
+    "Grapefruit": {
+      "unit": "Tonnes",
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 6,
+        "high": 8
+      }
+    },
+    "Hazelnuts": {
+      "unit": "Tonnes",
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 6,
+        "high": 8
+      }
+    },
+    "Kiwifruit_Tonne": {
+      "unit": "Tonnes",
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 4,
+        "high": 6
+      }
+    },
+    "Kiwifruit_Tray": {
+      "unit": "3.6kg tray",
+      "unitPlural": "3.6kg tray",
+      "coverage": {
+        "low": 4,
+        "high": 6
+      }
+    },
+    "Macadamias": {
+      "unit": "Tonnes",
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 6,
+        "high": 8
+      }
+    },
+    "Mangoes": {
+      "unit": "Tonnes",
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 6,
+        "high": 8
+      }
+    },
+    "Nectarines": {
+      "unit": "Tonnes",
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 6,
+        "high": 8
+      }
+    },
+    "Olives": {
+      "unit": "Tonnes",
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 6,
+        "high": 8
+      }
+    },
+    "Peaches": {
+      "unit": "Tonnes",
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 6,
+        "high": 8
+      }
+    },
+    "Pears": {
+      "unit": "Tonnes",
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 6,
+        "high": 8
+      }
+    },
+    "Pecans": {
+      "unit": "Tonnes",
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 6,
+        "high": 8
+      }
+    },
+    "Pistachios": {
+      "unit": "Tonnes",
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 6,
+        "high": 8
+      }
+    },
+    "Plums": {
+      "unit": "Tonnes",
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 6,
+        "high": 8
+      }
+    },
+    "Table_grapes": {
+      "unit": "Tonnes",
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 6,
+        "high": 8
+      }
+    },
+    "Walnuts": {
+      "unit": "Tonnes",
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 6,
+        "high": 8
+      }
+    },
+    "Wine_grapes": {
+      "unit": "Tonnes",
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 6,
+        "high": 8
+      }
+    },
+    "Other": {
+      "unit": "Tonnes",
+      "unitPlural": "Tonne",
+      "coverage": {
+        "low": 6,
+        "high": 8
+      }
+    }
+  }
+}
