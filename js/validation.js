@@ -1,148 +1,93 @@
 // validation.js
 
-export default class ROIValidator {
-    constructor() {
-        // Define required fields and their validation rules
-        this.validationRules = {
-            cropType: {
-                required: true,
-                message: "Crop type is required",
-                validate: (value) => value && value.trim().length > 0
-            },
-            cropYield: {
-                required: true,
-                message: "Annual crop yield must be greater than 0",
-                validate: (value) => !isNaN(value) && value > 0
-            },
-            reductionPercent: {
-                required: true,
-                message: "Reduction percentage must be between 0 and 100",
-                validate: (value) => !isNaN(value) && value >= 0 && value <= 100
-            },
-            cropValue: {
-                required: true,
-                message: "Crop value must be greater than 0",
-                validate: (value) => !isNaN(value) && value > 0
-            },
-            dieselCost: {
-                required: true,
-                message: "Diesel cost must be greater than 0",
-                validate: (value) => !isNaN(value) && value > 0
-            },
-            interestRate: {
-                required: true,
-                message: "Interest rate must be between 0 and 100",
-                validate: (value) => !isNaN(value) && value >= 0 && value <= 100
-            },
-            runningHours: {
-                required: true,
-                message: "Running hours must be greater than 0",
-                validate: (value) => !isNaN(value) && value >= 0
-            },
-            protectedArea: {
-                required: true,
-                message: "Protected area must be greater than 0",
-                validate: (value) => !isNaN(value) && value > 0
-            }
-        };
-
-        // Business logic validation rules
-        this.businessRules = {
-            minimumArea: 4, // Minimum area in hectares
-            maximumArea: 100, // Maximum area in hectares
-            maximumRunningHours: 250, // Maximum running hours per year
-            minimumDieselCost: 0.5, // Minimum diesel cost per litre
-            maximumDieselCost: 10, // Maximum diesel cost per litre
-        };
+export function validateForm(formData, country = 'nz') {
+    const errors = {};
+    
+    // Required fields validation
+    if (!formData.cropType || formData.cropType === '') {
+        errors.cropType = 'Please select a crop type';
     }
-
-    // Validate all fields
-    validateAll(data) {
-        const errors = {};
-        
-        // Check each field against validation rules
-        for (const [field, rules] of Object.entries(this.validationRules)) {
-            const error = this.validateField(field, data[field]);
-            if (error) {
-                errors[field] = error;
-            }
-        }
-
-        // Business logic validations
-        const businessErrors = this.validateBusinessRules(data);
-        Object.assign(errors, businessErrors);
-
-        return {
-            isValid: Object.keys(errors).length === 0,
-            errors
-        };
+    
+    if (!formData.cropYield || formData.cropYield <= 0) {
+        errors.cropYield = 'Please enter a valid crop yield greater than 0';
     }
-
-    // Validate single field
-    validateField(fieldName, value) {
-        const rules = this.validationRules[fieldName];
-        if (!rules) return null;
-
-        if (rules.required && (value === undefined || value === null || value === '')) {
-            return rules.message;
-        }
-
-        if (rules.validate && !rules.validate(value)) {
-            return rules.message;
-        }
-
-        return null;
+    
+    if (formData.reductionPercent === undefined || formData.reductionPercent <= 0 || formData.reductionPercent > 100) {
+        errors.reductionPercent = 'Please enter a valid reduction percentage between 0 and 100';
     }
-
-    // Validate business rules
-    validateBusinessRules(data) {
-        const errors = {};
-
-        // Protected area validations
-        if (data.protectedArea < this.businessRules.minimumArea) {
-            errors.protectedArea = `Protected area must be at least ${this.businessRules.minimumArea} hectares`;
-        }
-        if (data.protectedArea > this.businessRules.maximumArea) {
-            errors.protectedArea = `Protected area must not exceed ${this.businessRules.maximumArea} hectares`;
-        }
-
-        // Running hours validations
-        if (data.runningHours > this.businessRules.maximumRunningHours) {
-            errors.runningHours = `Running hours must not exceed ${this.businessRules.maximumRunningHours} hours per year`;
-        }
-
-        // Diesel cost validations
-        if (data.dieselCost < this.businessRules.minimumDieselCost) {
-            errors.dieselCost = `Diesel cost must be at least $${this.businessRules.minimumDieselCost} per litre`;
-        }
-        if (data.dieselCost > this.businessRules.maximumDieselCost) {
-            errors.dieselCost = `Diesel cost must not exceed $${this.businessRules.maximumDieselCost} per litre`;
-        }
-
-        // Crop specific validations (if crop data is available)
-        if (data.cropType && this.cropData && this.cropData[data.cropType]) {
-            const cropSpecificRules = this.cropData[data.cropType];
-            // Add any crop-specific validations here
-        }
-
-        return errors;
+    
+    if (!formData.cropValue || formData.cropValue <= 0) {
+        errors.cropValue = 'Please enter a valid crop value greater than 0';
     }
-
-    // Format validation errors for display
-    formatErrors(errors) {
-        return Object.entries(errors).map(([field, message]) => ({
-            field,
-            message
-        }));
+    
+    if (!formData.dieselCost || formData.dieselCost <= 0) {
+        errors.dieselCost = 'Please enter a valid diesel cost greater than 0';
     }
+    
+    if (!formData.runningHours || formData.runningHours <= 0) {
+        errors.runningHours = 'Please enter valid running hours greater than 0';
+    }
+    
+    if (!formData.protectedArea || formData.protectedArea <= 0) {
+        errors.protectedArea = 'Please enter a valid protected area greater than 0';
+    }
+    
+    if (formData.interestRate === undefined || formData.interestRate < 0 || formData.interestRate > 1) {
+        errors.interestRate = 'Please enter a valid interest rate between 0 and 1 (e.g., 0.05 for 5%)';
+    }
+    
+    // Contact information validation (if required)
+    if (formData.email && !isValidEmail(formData.email)) {
+        errors.email = 'Please enter a valid email address';
+    }
+    
+    // Country-specific validations could be added here if needed
+    if (country === 'au') {
+        // Australia-specific validations
+        // For example, different diesel price ranges
+    }
+    
+    return {
+        isValid: Object.keys(errors).length === 0,
+        errors
+    };
 }
 
-// Helper functions for specific validations
-const validators = {
-    isPositiveNumber: (value) => !isNaN(value) && value > 0,
-    isPercentage: (value) => !isNaN(value) && value >= 0 && value <= 100,
-    isEmail: (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value),
-    isNotEmpty: (value) => value && value.trim().length > 0
-};
+// Helper function to validate email format
+function isValidEmail(email) {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
+}
 
-export { ROIValidator, validators };
+// Initialize form with default values based on country
+export function getDefaultFormValues(country = 'nz') {
+    const defaults = {
+        nz: {
+            cropType: 'Apples',
+            cropYield: 60,
+            reductionPercent: 30,
+            cropValue: 1200,
+            dieselCost: 2.2,
+            runningHours: 10,
+            protectedArea: 24,
+            interestRate: 0.1
+        },
+        au: {
+            cropType: 'Apples',
+            cropYield: 60,
+            reductionPercent: 30,
+            cropValue: 1200,
+            dieselCost: 2.4, // Slightly different default for Australia
+            runningHours: 10,
+            protectedArea: 24,
+            interestRate: 0.1
+        }
+    };
+    
+    return defaults[country.toLowerCase()] || defaults.nz;
+}
+
+// Helper function to generate form field IDs with country prefix
+export function generateFieldId(fieldName, country = 'nz') {
+    return `${country.toLowerCase()}-${fieldName}`;
+}
